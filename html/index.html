@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>My Website</h1>
+<h1 class='article heading'>My Website</h1>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -31,17 +31,43 @@ Cillum dolore eu fugiat nulla , pariatur:
 		<li>cupidatat non proident</li>
 		<li>sunt in culpa.</li>
 	</ul>
+
+	<ul>
+		<li>one child</li>
+	</ul>
 </p>
+
+
+
+<p><a href="https://google.com" id="google-link">Google</a></p>
+<p></p><a href="https://cnn.com" id="cnn-link">CNN</a></p>
+
+<h2>Adjacent Sibling Selector</h2>
+<a href="https://espn.com" id="espn-link">ESPN</a>
+
+<h2 class="general-sibling">Sibling - Same Parent Selector</h2>
+<p>Sibling 1</p>
+<h4>Sibling 2</h4>
+<div>
+	<h4>Sibling 3</h4>
+</div>
+	
+<h2 class="child-selector">Child Selector
+	<p>Child 1</p>
+	<p>Child 2</p>
+	<h3>Child 3</h3>
+</h2>
+
 
 <h2>Services</h2>
 
 <table border="1">
-	<thead>
-		<tr>
-			<td>Lorem</td>
-			<td>Ipsum</td>
-			<td>Dolor</td>
-		</tr>
+<thead>
+	<tr>
+		<td>Lorem</td>
+		<td>Ipsum</td>
+		<td>Dolor</td>
+	</tr>
 	</thead>
 	<tbody>
 		<tr>
@@ -52,23 +78,30 @@ Cillum dolore eu fugiat nulla , pariatur:
 		<tr>
 			<td>Adipisicing</td>
 			<td>Elit</td>
-			<td>Sed</td>
+			<td class='test-descendant'>Sed</td>
 		</tr>
 		
 	</tbody>
 </table>
 
 
-<img src="../img/img-2.jpg">
+<img  src="../img/img-2.jpg">
 
-<h2>Contact Us</h2>
+<p id='service-image'></p>
+<p id='linear-gradient-1'>linear-gradient-1</p>
+<p id='linear-gradient-2'>linear-gradient-2</p>
+<p id='linear-gradient-3'>linear-gradient-3</p>
+<p id='linear-gradient-4'>linear-gradient-4</p>
+<p id='linear-gradient-5'>linear-gradient-5</p>
+<p id='radial-gradient-1'>radial-gradient-1</p>
+
+<h2 class='test-descendant'>Contact Us</h2>
 
 <form>
 	<input type="text" placeholder="Full Name">
 	<input type="email" placeholder="Email">
 	<textarea></textarea>
 	<button>Submit</button>	
-	
 </form>
 
 

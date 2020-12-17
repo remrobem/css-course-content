@@ -1,0 +1,131 @@
+body {
+    background-color: rgba(12, 128, 236, 0.3);
+}
+
+h2:hover {
+    color: red;
+}
+
+li:first-child {
+    color: pink;
+}
+
+li:nth-child(2) {
+    color: green;
+}
+
+li:last-child {
+    color: aquamarine;
+}
+
+li:only-child {
+    color: skyblue;
+}
+
+/* this is the order to implement these psuedo-classes: */
+#google-link:link {
+    color: rgb(136, 230, 15);
+}
+
+#google-link:visited {
+    color: rgb(226, 131, 7);
+}
+
+#google-link:hover {
+    color: rgb(224, 64, 99);
+}
+
+#google-link:active {
+    color: rgb(87, 15, 168);
+}
+
+/* attribute selector - href contains cnn */
+a[href*="cnn"] {
+    background-color: yellow;
+}
+/* starts with */
+img[src^="../img/"] {
+    border: solid 5px red;
+}
+/* ends with */
+a[href$="espn.com"] {
+    border: solid 5px green;
+}
+
+/* adjacent siblings - a is not in h2  */
+h2 + a {
+    margin-left: 3rem;
+    background-color: purple;
+    color: white;
+}
+
+/* general sibling selector - have same parent */
+
+p ~ h4 {
+    margin-left: 3rem;
+    background-color: tomato;
+}
+/* child selector  - no grandchildren selected*/
+.child-selector > p,
+h3 {
+    margin-left: 3rem;
+}
+h2 > p {
+    background-color: palegreen;
+}
+
+/* descendent - child, grandchild,.... */
+table .test-descendant {
+    background-color: rebeccapurple;
+}
+/* equal/contains for attributes that allow whitespace */
+h1[class~="article"] {
+    background-color: salmon;
+}
+
+#service-image {
+    height: 400px;
+    width: 70%;
+    background: url("../img/img-2.jpg");
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-color: steelblue;
+}
+
+#linear-gradient-1 {
+    height: 400px;
+    width: 70%;
+    /* background: linear-gradient(to right, red, blue, orange,yellow); */
+    background: linear-gradient(to right, rgb(224, 22, 22), rgba(224, 22, 22,0));
+}
+
+#linear-gradient-2 {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to right, red, blue, orange,yellow);
+}
+
+#linear-gradient-3 {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to top, red, blue, orange,yellow);
+}
+
+#linear-gradient-4 {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(to top right, red, blue, orange,yellow);
+}
+
+#linear-gradient-5 {
+    height: 400px;
+    width: 70%;
+    background: linear-gradient(240deg, red, blue, orange,yellow);
+}
+
+#radial-gradient-1 {
+    height: 400px;
+    width: 70%;
+    background: radial-gradient(circle, red 10%, blue 30%, orange 40%,yellow 50%);
+}
